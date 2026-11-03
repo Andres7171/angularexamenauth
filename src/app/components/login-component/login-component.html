@@ -1,0 +1,10 @@
+<h1>LogIn</h1>
+<form (ngSubmit)="checkLogin()">
+    <label for="">Empleado</label>
+    <input [(ngModel)]="usuario.userName" name="userName" class="form-control" type="text">
+
+    <label for="">Password</label>
+    <input [(ngModel)]="usuario.password" name="password" type="password" class="form-control">
+
+    <button type="submit" class="btn btn-info">Iniciar sesion</button>
+</form>

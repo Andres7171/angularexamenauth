@@ -1,0 +1,11 @@
+<h1>Perfil de usuario</h1>
+
+@if (user();as dato) {
+  <ul class="list-group">
+    <li class="list-group-item">ID: {{ dato.idEmpleado }}</li>
+    <li class="list-group-item">Apellido: {{ dato.apellido }}</li>
+    <li class="list-group-item">Oficio: {{ dato.oficio }}</li>
+    <li class="list-group-item">Salario: {{ dato.salario }}</li>
+    <li class="list-group-item">Jefe: {{ dato.director }}</li>
+  </ul>
+}
